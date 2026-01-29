@@ -1,6 +1,6 @@
 # 🏥 Hospital Doctor Search & Appointment Portal
 
-## 📘 Project Overview
+📘 Project Overview
 
 As a part of Assignment – I for the Software Development Practices course, this web application was developed to demonstrate the use of HTML, CSS, JavaScript, and JSON in building a dynamic and user-friendly hospital management module.
 The project focuses on implementing real-time search functionality along with a modern user interface, without using any backend or database.
