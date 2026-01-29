@@ -1,0 +1,28 @@
+[
+  { "name": "Dr. Aarav Menon", "specialization": "Cardiology", "availability": ["Monday", "Wednesday", "Sunday"] },
+  { "name": "Dr. Kavya Iyer", "specialization": "Cardiology", "availability": ["Tuesday", "Thursday", "Saturday"] },
+  { "name": "Dr. Nikhil Verma", "specialization": "Cardiology", "availability": ["Friday", "Saturday"] },
+
+  { "name": "Dr. Rohan Mallick", "specialization": "Neurology", "availability": ["Monday", "Wednesday", "Friday"] },
+  { "name": "Dr. Sneha Bose", "specialization": "Neurology", "availability": ["Tuesday", "Thursday", "Sunday"] },
+  { "name": "Dr. Aishwarya Sen", "specialization": "Neurology", "availability": ["Saturday"] },
+
+  { "name": "Dr. Arjun Patel", "specialization": "Orthopedics", "availability": ["Monday", "Thursday", "Saturday"] },
+  { "name": "Dr. Neha Deshmukh", "specialization": "Orthopedics", "availability": ["Wednesday", "Friday", "Sunday"] },
+  { "name": "Dr. Mohit Aggarwal", "specialization": "Orthopedics", "availability": ["Tuesday"] },
+
+  { "name": "Dr. Imran Shaikh", "specialization": "Dermatology", "availability": ["Tuesday", "Thursday", "Saturday"] },
+  { "name": "Dr. Pooja Kulkarni", "specialization": "Dermatology", "availability": ["Monday", "Wednesday", "Friday"] },
+  { "name": "Dr. Farah Khan", "specialization": "Dermatology", "availability": ["Sunday"] },
+
+  { "name": "Dr. Suresh Nair", "specialization": "Pediatrics", "availability": ["Tuesday", "Thursday", "Saturday"] },
+  { "name": "Dr. Ananya Pillai", "specialization": "Pediatrics", "availability": ["Monday", "Friday", "Sunday"] },
+  { "name": "Dr. Rahul Bansal", "specialization": "Pediatrics", "availability": ["Wednesday"] },
+
+  { "name": "Dr. Vikram Rao", "specialization": "General Medicine", "availability": ["Wednesday", "Friday", "Sunday"] },
+  { "name": "Dr. Meenal Joshi", "specialization": "General Medicine", "availability": ["Monday", "Thursday", "Saturday"] },
+  { "name": "Dr. Kunal Mehra", "specialization": "General Medicine", "availability": ["Tuesday", "Thursday", "Friday"] },
+
+  { "name": "Dr. Karthik Subramanian", "specialization": "Gastroenterology", "availability": ["Tuesday", "Thursday"] },
+  { "name": "Dr. Ritu Sharma", "specialization": "Gastroenterology", "availability": ["Monday", "Wednesday", "Sunday"] }
+]
