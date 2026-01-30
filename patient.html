@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Patient Portal | Medway Hospitals</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- SIDEBAR -->
+<div class="sidebar">
+    <h2 class="logo">City Care</h2>
+
+    <a href="patient.html" class="active">Patient Profile</a>
+    <a href="#" onclick="showSection('doctorSearch')">Search Doctors</a>
+    <a href="#" onclick="showSection('appointments')">My Appointments</a>
+    <a href="#" onclick="showSection('feedback')">Feedback</a>
+    <a href="index.html">Logout</a>
+</div>
+
+<!-- MAIN CONTENT -->
+<div class="main-content">
+
+    <!-- HEADER -->
+    <header class="topbar">
+    <h1 class="hospital-name">Medway Hospitals</h1>
+
+    <img src="assets/logo.jpg" alt="Hospital Logo" class="header-logo">
+</header>
+
+    <!-- DASHBOARD -->
+    <section class="section" id="dashboard">
+        <h2>Welcome, Patient</h2>
+        <p>
+            Use this portal to search doctors, book appointments, and provide feedback.
+        </p>
+
+        <div class="cards">
+            <div class="card">
+                <h3>Search Doctors</h3>
+                <p>Find doctors by name, specialization, and availability.</p>
+                <button onclick="showSection('doctorSearch')">Search</button>
+            </div>
+
+            <div class="card">
+                <h3>My Appointments</h3>
+                <p>View your upcoming appointments.</p>
+                <button onclick="showSection('appointments')">View</button>
+            </div>
+
+            <div class="card">
+                <h3>Feedback</h3>
+                <p>Share your experience with Medway Hospitals.</p>
+                <button onclick="showSection('feedback')">Give Feedback</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- DOCTOR SEARCH -->
+    <section class="section" id="doctorSearch" style="display:none;">
+        <h2>Search Doctors</h2>
+
+        <div class="search-section">
+            <input type="text" id="nameSearch" placeholder="Search doctor name">
+            <input type="text" id="specSearch" placeholder="Search specialization">
+
+            <select id="dayFilter">
+                <option value="">Any Day</option>
+                <option>Monday</option>
+                <option>Tuesday</option>
+                <option>Wednesday</option>
+                <option>Thursday</option>
+                <option>Friday</option>
+                <option>Saturday</option>
+                <option>Sunday</option>
+            </select>
+        </div>
+
+        <div class="table-section" id="doctorTableSection" style="display:none;">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Doctor Name</th>
+                        <th>Specialization</th>
+                        <th>Available Days</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="doctorTable">
+                    <!-- Filled dynamically from doctors.json -->
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- APPOINTMENTS -->
+    <section class="section" id="appointments" style="display:none;">
+        <h2>My Appointments</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Doctor</th>
+                    <th>Date</th>
+                    <th>Time</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>—</td>
+                    <td>—</td>
+                    <td>—</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- FEEDBACK -->
+    <section class="section" id="feedback" style="display:none;">
+        <h2>Patient Feedback</h2>
+
+        <form class="form" onsubmit="submitFeedback(event)">
+            <label>Your Feedback</label>
+            <textarea rows="4" required></textarea>
+
+            <button type="submit">Submit Feedback</button>
+        </form>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        © 2026 · Made by Gopala Krishna H K · All rights reserved
+    </footer>
+
+</div>
+
+<!-- COMMON JS -->
+<script src="js/script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,52 @@
+[
+  {
+    "name": "Paracetamol",
+    "category": "Tablet",
+    "quantity": 120
+  },
+  {
+    "name": "Amoxicillin",
+    "category": "Capsule",
+    "quantity": 60
+  },
+  {
+    "name": "Ibuprofen",
+    "category": "Tablet",
+    "quantity": 85
+  },
+  {
+    "name": "Cough Syrup",
+    "category": "Syrup",
+    "quantity": 45
+  },
+  {
+    "name": "Insulin",
+    "category": "Injection",
+    "quantity": 30
+  },
+  {
+    "name": "ORS",
+    "category": "Solution",
+    "quantity": 100
+  },
+  {
+    "name": "Vitamin B12",
+    "category": "Injection",
+    "quantity": 55
+  },
+  {
+    "name": "Antacid",
+    "category": "Tablet",
+    "quantity": 90
+  },
+  {
+    "name": "Saline",
+    "category": "IV Fluid",
+    "quantity": 40
+  },
+  {
+    "name": "Azithromycin",
+    "category": "Tablet",
+    "quantity": 70
+  }
+]

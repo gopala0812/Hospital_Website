@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login | Medway Hospitals</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="sidebar">
+    <h2 class="logo">City Care</h2>
+
+    <a href="index.html">Dashboard</a>
+    <a href="services.html">Services</a>
+    <a href="login.html" class="active">Login</a>
+</div>
+
+<div class="main-content">
+
+    <header class="topbar">
+    <h1 class="hospital-name">Medway Hospitals</h1>
+
+    <img src="assets/logo.jpg" alt="Hospital Logo" class="header-logo">
+</header>
+
+    <section class="section login-section">
+        <div class="login-card">
+            <h2>User Login</h2>
+
+            <form class="form" onsubmit="handleLogin(event)">
+                <label>Username</label>
+                <input type="text" id="username" placeholder="Enter username" required>
+
+                <label>Password</label>
+                <input type="password" id="password" placeholder="Enter password" required>
+
+                <button type="submit">Login</button>
+            </form>
+
+            <button class="back-btn" onclick="history.back()">← Back</button>
+        </div>
+    </section>
+
+    <footer>
+        © 2026 · Made by Gopala Krishna H K · All rights reserved
+    </footer>
+
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,259 @@
+/* =====================
+   RESET
+===================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background-color: #f6f8fb;
+    color: #1f2933;
+}
+
+/* =====================
+   SIDEBAR
+===================== */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 240px;
+    height: 100vh;
+    background: #0b3c49;
+    padding: 24px 16px;
+}
+
+.sidebar h2.logo {
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 22px;
+}
+
+.sidebar a {
+    display: block;
+    color: #e5f1f4;
+    text-decoration: none;
+    padding: 14px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    font-size: 15px;
+}
+
+.sidebar a:hover,
+.sidebar a.active {
+    background: rgba(255, 255, 255, 0.18);
+    color: #ffffff;
+}
+
+/* =====================
+   MAIN CONTENT
+===================== */
+.main-content {
+    margin-left: 240px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* =====================
+   HEADER
+===================== */
+.topbar {
+    background: #ffffff;
+    padding: 18px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.06);
+}
+
+.hospital-name {
+    font-size: 22px;
+    font-weight: 600;
+    color: #0b3c49;
+}
+
+.header-logo {
+    width: 44px;
+    height: 44px;
+    object-fit: contain;
+}
+
+/* =====================
+   SECTIONS
+===================== */
+.section {
+    padding: 30px;
+}
+
+.section h2 {
+    font-size: 26px;
+    margin-bottom: 12px;
+    color: #0b3c49;
+}
+
+.section p {
+    font-size: 16px;
+    line-height: 1.7;
+    color: #374151;
+}
+
+/* =====================
+   CARDS
+===================== */
+.cards {
+    margin-top: 25px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 24px;
+}
+
+.card {
+    background: #ffffff;
+    padding: 26px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+.card h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #0b3c49;
+}
+
+.card p {
+    font-size: 15px;
+    color: #4b5563;
+}
+
+/* =====================
+   FORMS (GLOBAL)
+===================== */
+.form {
+    width: 100%;
+}
+
+.form label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 6px;
+    font-weight: 500;
+}
+
+.form input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 16px;
+    border-radius: 8px;
+    border: 1px solid #cbd5e1;
+    font-size: 15px;
+}
+
+.form input:focus {
+    outline: none;
+    border-color: #0b3c49;
+}
+
+/* =====================
+   BUTTONS
+===================== */
+.form button {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(135deg, #0b3c49, #145e6f);
+    border: none;
+    color: #ffffff;
+    font-size: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.form button:hover {
+    opacity: 0.9;
+}
+
+.back-btn {
+    margin-top: 20px;
+    padding: 8px 16px;
+    background: #e5e7eb;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+/* =====================
+   LOGIN PAGE (IMPORTANT FIX)
+===================== */
+.login-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 120px);
+}
+
+.login-card {
+    width: 100%;
+    max-width: 420px;
+    background: #ffffff;
+    padding: 32px;
+    border-radius: 18px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.12);
+}
+
+.login-card h2 {
+    text-align: center;
+    margin-bottom: 24px;
+    color: #0b3c49;
+}
+
+/* =====================
+   TABLES
+===================== */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+th, td {
+    padding: 14px;
+    text-align: center;
+}
+
+th {
+    background: #f1f5f9;
+    font-weight: 600;
+}
+
+/* =====================
+   FOOTER
+===================== */
+footer {
+    margin-top: auto;
+    text-align: center;
+    padding: 18px;
+    background: #ffffff;
+    font-size: 14px;
+    color: #6b7280;
+}
+
+/* =====================
+   MOBILE
+===================== */
+@media (max-width: 768px) {
+    .sidebar {
+        display: none;
+    }
+
+    .main-content {
+        margin-left: 0;
+    }
+}

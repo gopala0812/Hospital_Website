@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Staff Portal | City Care Hospital</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="sidebar">
+    <h2 class="logo">City Care</h2>
+
+    <a href="staff.html" class="active">Staff Profile</a>
+    <a href="#" onclick="showSection('register')">Register Patient</a>
+    <a href="#" onclick="showSection('inventory')">Medicine Inventory</a>
+    <a href="index.html">Logout</a>
+</div>
+
+<div class="main-content">
+
+    <header class="topbar">
+    <h1 class="hospital-name">Medway Hospitals</h1>
+
+    <img src="assets/logo.jpg" alt="Hospital Logo" class="header-logo">
+</header>
+
+    <!-- STAFF PROFILE -->
+    <section class="section">
+        <h2>Welcome, Staff Member</h2>
+        <p>You have access to patient registration and medicine inventory management.</p>
+    </section>
+
+    <!-- PATIENT REGISTRATION -->
+    <section class="section" id="register" style="display:none;">
+        <h2>Patient Registration</h2>
+
+        <form class="form" onsubmit="registerPatient(event)">
+            <label>Patient Name</label>
+            <input type="text" required>
+
+            <label>Age</label>
+            <input type="number" required>
+
+            <label>Contact Number</label>
+            <input type="tel" required>
+
+            <label>Email</label>
+            <input type="email" required>
+
+            <button type="submit">Register Patient</button>
+        </form>
+    </section>
+
+    <!-- MEDICINE INVENTORY -->
+    <section class="section" id="inventory">
+    <h2>Medicine Inventory</h2>
+
+    <button onclick="sortMedicines()" class="sort-btn">
+        Sort by Quantity
+    </button>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Medicine Name</th>
+                <th>Category</th>
+                <th>Quantity</th>
+            </tr>
+        </thead>
+        <tbody id="medicineTable">
+            <!-- Data will be loaded from medicines.json -->
+        </tbody>
+    </table>
+</section>
+
+
+    
+
+    <footer>
+        © 2026 · Made by Gopala Krishna H K · All rights reserved
+    </footer>
+
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
